@@ -85,7 +85,7 @@
       "cat": "css,tool",
       "link": "https://wweb.dev/resources/css-separator-generator/",
       "name": "Section Separator Generator"
-    }
+    },
    {
       "cat": "css,cli,tool,npm",
       "link": "https://purgecss.com/CLI.html",
