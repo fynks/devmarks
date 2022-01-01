@@ -52,8 +52,24 @@
     },
     {
       "cat": "css,tool",
+      "link": "https://smolcss.dev/",
+      "name": "Smol Css"
+    },
+    {
+      "cat": "css,tool",
+      "link": "https://1linelayouts.glitch.me/",
+      "name": "1 Line Layouts"
+
+    },
+    {
+      "cat": "css,tool",
       "link": "https://www.joshwcomeau.com/shadow-palette/",
       "name": "Shadow Palette"
+    },
+    {
+      "cat": "css,tool,shadow",
+      "link": "https://shadows.brumm.af/",
+      "name": "Box Shadow Generator"
     },
     {
       "cat": "css,tool",
@@ -65,6 +81,11 @@
       "link": "https://fffuel.co/cccolor/",
       "name": "Color Picker"
     },
+    {
+      "cat": "css,tool",
+      "link": "https://wweb.dev/resources/css-separator-generator/",
+      "name": "Section Separator Generator"
+    }
    {
       "cat": "css,cli,tool,npm",
       "link": "https://purgecss.com/CLI.html",
@@ -84,6 +105,11 @@
       "cat": "css,animation,tool",
       "link": "https://webcode.tools/generators/css/keyframe-animation",
       "name": "Animation Generator"
+    },
+    {
+      "cat": "css,animation,tool",
+      "link": "https://animista.net/play/text/tracking-in/tracking-in-expand",
+      "name": "Animista"
     },
     {
       "cat": "encryption,tool",
@@ -294,6 +320,11 @@
       "cat": "svg,tool",
       "link": "https://jakearchibald.github.io/svgomg/",
       "name": "SVG Editor"
+    },
+    {
+      "cat": "svg,icon",
+      "link": "https://getwaves.io/",
+      "name": "Get Waves"
     },
     {
       "cat": "svg,design,tool",
