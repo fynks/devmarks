@@ -59,7 +59,16 @@
       "cat": "css,tool",
       "link": "https://1linelayouts.glitch.me/",
       "name": "1 Line Layouts"
-
+    },
+    {
+      "cat": "css,tool",
+      "link": "https://csslayout.io/",
+      "name": "CSS Layouts"
+    },
+    {
+      "cat": "css,tool",
+      "link": "https://squircley.app/",
+      "name": "SVG Squircle Maker"
     },
     {
       "cat": "css,tool",
@@ -86,7 +95,7 @@
       "link": "https://wweb.dev/resources/css-separator-generator/",
       "name": "Section Separator Generator"
     },
-   {
+    {
       "cat": "css,cli,tool,npm",
       "link": "https://purgecss.com/CLI.html",
       "name": "PurgeCSS"
@@ -358,6 +367,11 @@
     },
     {
       "cat": "svg,bg",
+      "link": "https://textbgs.com/",
+      "name": "SVG text bg"
+    },
+    {
+      "cat": "svg,bg",
       "link": "https://www.magicpattern.design/tools/css-backgrounds",
       "name": "Magic Patterns"
     },
@@ -370,6 +384,11 @@
       "cat": "tool",
       "link": "https://roneetkumar.github.io/code/",
       "name": "QR Generator"
+    },
+    {
+      "cat": "tool",
+      "link": "https://pfpmaker.com/",
+      "name": "Profile Pic"
     },
     {
       "cat": "shortner,tool",
