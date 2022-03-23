@@ -15,7 +15,7 @@
   "author": "Fynks",
   "email": "",
   "dependencies": {
-  "workbox-cli": "^6.4.1",
+  "workbox-cli": "^6.5.1",
   "@josee9988/minifyall": "^1.2.2"
 }
 }

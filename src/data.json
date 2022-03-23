@@ -27,8 +27,18 @@
     },
     {
       "cat": "bdg",
+      "link": "https://supershields.io/",
+      "name": "Super Shields"
+    },
+    {
+      "cat": "bdg",
       "link": "https://rozaxe.github.io/factory/",
       "name": "Badges Factory"
+    },
+    {
+      "cat": "bdg",
+      "link": "https://mdb.pushkaryadav.in/generate",
+      "name": "MKD Badges"
     },
     {
       "cat": "src,js,php",
