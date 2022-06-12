@@ -176,6 +176,11 @@
       "name": "TinyJPG"
     },
     {
+      "cat": "img,tool,optimize",
+      "link": "https://www.optimizeimages.com/tool",
+      "name": "Optimize Images"
+    },
+    {
       "cat": "img,ss,tool",
       "link": "https://carbon.now.sh/",
       "name": "Carbon"
@@ -224,6 +229,11 @@
       "cat": "list",
       "link": "https://github.com/sindresorhus/awesome#front-end-development",
       "name": "Awesome"
+    },
+    {
+      "cat": "list",
+      "link": "https://web-dev-resources.com/",
+      "name": "Web Dev Resources"
     },
     {
       "cat": "list",
@@ -386,6 +396,21 @@
       "name": "Magic Patterns"
     },
     {
+      "cat": "svg,bg",
+      "link": "https://www.svgeez.com/",
+      "name": "SVGeez"
+    },
+    {
+      "cat": "svg,bg",
+      "link": "https://philiprogers.com/svgpatterns/",
+      "name": "SVG Patterns"
+    },
+    {
+      "cat": "svg,bg",
+      "link": "https://www.visiwig.com/patterns/",
+      "name": "Vector Patterns"
+    },
+    {
       "cat": "hex,rem,tool",
       "link": "https://fynks.github.io/tools/converter/",
       "name": "px to rem"
@@ -409,6 +434,11 @@
       "cat": "rss,tool",
       "link": "https://github.com/davidesantangelo/dato.rss",
       "name": "dato.rss"
+    },
+    {
+      "cat": "rss,tool",
+      "link": "https://morss.it/",
+      "name": "morss.it"
     },
     {
       "cat": "downloader,tool",
