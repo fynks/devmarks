@@ -326,6 +326,11 @@
       "name": "HTML to WP"
     },
     {
+      "cat": "html,templates",
+      "link": "https://tailwindsites.com/",
+      "name": "Tailwind Templates"
+    },
+    {
       "cat": "svg,icon",
       "link": "https://www.flaticon.com/",
       "name": "Free SVGs"
