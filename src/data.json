@@ -226,6 +226,16 @@
       "name": "Formatter"
     },
     {
+      "cat": "pdf,tool",
+      "link": "https://tinywow.com/pdf",
+      "name": "PDF Tools"
+    },
+    {
+      "cat": "screenshot,tool",
+      "link": "https://instant.tools/url-to-screenshot",
+      "name": "url to screenshot"
+    },
+    {
       "cat": "list",
       "link": "https://github.com/sindresorhus/awesome#front-end-development",
       "name": "Awesome"
