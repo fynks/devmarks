@@ -46,13 +46,8 @@
       "name": "Scripts"
     },
     {
-      "cat": "css,html,json,tool",
-      "link": "https://minifyall.jgracia.es/",
-      "name": "Minifyall"
-    },
-    {
       "cat": "css,tool",
-      "link": "https://github.com/pajasevi/UnCSS-Online",
+      "link": "https://uncss-online.com/",
       "name": "UnCSS online"
     },
     {
@@ -227,7 +222,7 @@
     },
     {
       "cat": "pdf,tool",
-      "link": "https://tinywow.com/pdf",
+      "link": "https://pdfux.com/",
       "name": "PDF Tools"
     },
     {
@@ -274,11 +269,6 @@
       "cat": "list",
       "link": "https://github.com/dypsilon/frontend-dev-bookmarks",
       "name": "Frontend Dev"
-    },
-    {
-      "cat": "px,rem,tool",
-      "link": "https://matthewkosloski.me/labs/pixem/editor/",
-      "name": "Pixem"
     },
     {
       "cat": "upload,share,tool",
@@ -459,11 +449,6 @@
       "cat": "maths,tool",
       "link": "https://wolfreealpha.glitch.me/#Web-App",
       "name": "Wolfree Alpha"
-    },
-    {
-      "cat": "downloader,tool",
-      "link": "https://alltubedownload.net/",
-      "name": "All Tube"
     },
     {
       "cat": "filters,tool",
