@@ -10,15 +10,92 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel=apple-touch-icon href=./favicon.png>
 <link rel=preload href=./json/data.json as=fetch crossorigin=anonymous>
-<style>:root{ --max-width: 40rem; --bgc: #343a40; --card-bgc: #485759; --text-color: #fff;} *, ::after, ::before{ box-sizing: border-box; text-decoration: none; color: var(--text-color)} html{ scroll-behavior: smooth} body{ background-color: var(--bgc)} header{ max-width: var(--max-width); background-color: var(--card-bgc); box-shadow: var(--bs); padding: .1rem 2rem; margin: auto; width: 96%; text-align: center; border-radius: .6rem} header h2{ font-weight: 500; margin-bottom: -.1rem; margin: auto; padding: .8rem} input{ background-color: var(--card-bgc); width: 80%; padding: .3rem; margin: auto; text-align: center; border: 0; border-bottom: .5px solid; margin-bottom: 1rem} input:focus, input:focus-visible{ outline: 0} table{ max-width: var(--max-width); margin: 0 auto; width: 98%; margin-bottom: 1rem; color: #212529; border-collapse: separate; border-spacing: 0 .625rem; text-align: center} td{ padding: 1.5rem; text-align: center; box-shadow: var(--bs); background: var(--card-bgc); border-radius: 1rem; animation: myAnim .5s ease-in 0s 1 normal forwards} .pill{ border: .5px solid; border-radius: 1rem; padding: .1rem .8rem; width: fit-content; margin: auto; font-family: monospace; margin-top: .8rem} td a{ font-size: large; font-family: 'Courier New', Courier, monospace; position: relative;}td a::before{ content: ''; position: absolute; left: 0; bottom: 0; width: 0%; height: 1px; background-color: var(--text-color); transition: width 0.3s ease-in-out}td a:hover::before{ width: 100%} @keyframes myAnim{ 0%{ opacity: 0; transform: rotateX(-100deg); transform-origin: top} 100%{ opacity: 1; transform: rotateX(0deg); transform-origin: top}} </style>
+    <style>
+         *, ::after, ::before{ box-sizing: border-box; text-decoration: none;}
+        html{ scroll-behavior: smooth} 
+        body{
+            background-color: #343a40;
+            margin-inline: 0.8rem;
+        }
+        h1 {
+            text-align: center;
+        }
+        .search,li {
+            background-color: #485759;
+        }
+
+        .search{
+            width: 100%;
+            padding: 10px;
+            outline: 0;
+            border: 0;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            
+        }
+        header,.search,a{
+            color: #fff;
+            text-decoration: none;
+        }
+        sup{
+            color: rgb(146, 196, 157);
+        }
+    </style>
 </head>
 <body>
-<header>
-<h2><a href=https://github.com/fynks/devmarks rel=noreferrer target="_blank">DevMarks</a></h2><input autofocus type=search class=light-table-filter data-table=order-table placeholder=search... autofocus>
+    <header>
+    <h1>Devmarks</h1>
 </header>
 <main>
-<table class="table table-style order-table"><thead><tr><th width=100%></th></tr></thead><tbody></tbody></table>
-</main>
- <script>async function getData(url){ const response=await fetch(url); const json=await response.json(); return json.data} async function renderData(){ const data=await getData("./json/data.json"); data.sort((a, b)=>a.cat.localeCompare(b.cat)); const html=data.map(({ link, name, cat})=>`<tr><td><a href="${link}" rel="noreferrer" target="_blank">${name}</a><p class="pill">${cat}</p></td></tr>`).join(""); document.querySelector("tbody").innerHTML=html} renderData();</script><script>const filterTable=(function (){ let inputEl, tableEls; function handleInput(){ const query=inputEl.value.toLowerCase(); tableEls.forEach(tableEl=>{ const rows=Array.from(tableEl.tBodies[0].rows); rows.forEach(row=>{ const content=row.textContent.toLowerCase(); row.style.display=content.indexOf(query)===-1 ? "none" : "table-row";});});} return{ init(){ inputEl=document.querySelector(".light-table-filter"); tableEls=Array.from(document.getElementsByClassName(inputEl.getAttribute("data-table"))); inputEl.addEventListener("input", handleInput);}};})(); if (document.readyState==="complete"){ filterTable.init();} else{ document.addEventListener("readystatechange", function (){ if (document.readyState==="complete"){ filterTable.init();}});} </script><script>if ('serviceWorker' in navigator){ window.addEventListener('load', ()=>{ navigator.serviceWorker.register('/sw.js');});}</script>
+    <input type="text" id="searchInput" placeholder="Search bookmarks..." class="search" autofocus>
+    <ul id="bookmarksList"></ul>
+
+    <script type="module">
+        const bookmarksList = document.getElementById('bookmarksList');
+        const searchInput = document.getElementById('searchInput');
+
+        async function fetchBookmarks() {
+            try {
+                const response = await fetch('data.json');
+                const { bookmarks } = await response.json();
+                return bookmarks;
+            } catch (error) {
+                console.error('Error fetching bookmarks:', error);
+                return [];
+            }
+        }
+
+        function displayBookmarks(bookmarksArray) {
+            bookmarksList.innerHTML = '';
+            const sortedBookmarks = bookmarksArray.slice().sort((a, b) => a.cat.localeCompare(b.cat));
+            sortedBookmarks.forEach(({ title, url, cat }) => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="${url}" target="_blank">${title}</a> <sup>${cat}</sup>`;
+                bookmarksList.appendChild(li);
+            });
+        }
+
+        (async () => {
+            const allBookmarks = await fetchBookmarks();
+            displayBookmarks(allBookmarks);
+
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value.toLowerCase();
+                const filteredBookmarks = allBookmarks.filter(({ title, url, cat }) =>
+                    title.toLowerCase().includes(searchTerm) || url.toLowerCase().includes(searchTerm) || cat.toLowerCase().includes(searchTerm)
+                );
+                displayBookmarks(filteredBookmarks);
+            });
+        })();
+    </script>
+    </main>
 </body>
 </html>
