@@ -10,92 +10,18 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel=apple-touch-icon href=./favicon.png>
 <link rel=preload href=./json/data.json as=fetch crossorigin=anonymous>
-    <style>
-         *, ::after, ::before{ box-sizing: border-box; text-decoration: none;}
-        html{ scroll-behavior: smooth} 
-        body{
-            background-color: #343a40;
-            margin-inline: 0.8rem;
-        }
-        h1 {
-            text-align: center;
-        }
-        .search,li {
-            background-color: #485759;
-        }
-
-        .search{
-            width: 100%;
-            padding: 10px;
-            outline: 0;
-            border: 0;
-            border-radius: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-            
-        }
-        header,.search,a{
-            color: #fff;
-            text-decoration: none;
-        }
-        sup{
-            color: rgb(146, 196, 157);
-        }
-    </style>
+ <style>*, ::after, ::before{ box-sizing: border-box; text-decoration: none} html{ scroll-behavior: smooth} body{ background-color: #343a40; margin-inline: 0.8rem;} h1{ text-align: center;} .search,li{ background-color: #485759;} .search{ width: 100%; padding: 10px; outline: 0; border: 0; border-radius: 5px;} ul{ list-style-type: none; padding: 0;} li{ padding: 10px; margin: 5px 0; border-radius: 5px;} header,.search,a{ color: #fff; text-decoration: none;} sup{ color: rgb(146, 196, 157);} </style>
 </head>
 <body>
-    <header>
-    <h1>Devmarks</h1>
+<header>
+<h1>Devmarks</h1>
 </header>
 <main>
-    <input type="text" id="searchInput" placeholder="Search bookmarks..." class="search" autofocus>
-    <ul id="bookmarksList"></ul>
-
-    <script type="module">
-        const bookmarksList = document.getElementById('bookmarksList');
-        const searchInput = document.getElementById('searchInput');
-
-        async function fetchBookmarks() {
-            try {
-                const response = await fetch('data.json');
-                const { bookmarks } = await response.json();
-                return bookmarks;
-            } catch (error) {
-                console.error('Error fetching bookmarks:', error);
-                return [];
-            }
-        }
-
-        function displayBookmarks(bookmarksArray) {
-            bookmarksList.innerHTML = '';
-            const sortedBookmarks = bookmarksArray.slice().sort((a, b) => a.cat.localeCompare(b.cat));
-            sortedBookmarks.forEach(({ title, url, cat }) => {
-                const li = document.createElement('li');
-                li.innerHTML = `<a href="${url}" target="_blank">${title}</a> <sup>${cat}</sup>`;
-                bookmarksList.appendChild(li);
-            });
-        }
-
-        (async () => {
-            const allBookmarks = await fetchBookmarks();
-            displayBookmarks(allBookmarks);
-
-            searchInput.addEventListener('input', () => {
-                const searchTerm = searchInput.value.toLowerCase();
-                const filteredBookmarks = allBookmarks.filter(({ title, url, cat }) =>
-                    title.toLowerCase().includes(searchTerm) || url.toLowerCase().includes(searchTerm) || cat.toLowerCase().includes(searchTerm)
-                );
-                displayBookmarks(filteredBookmarks);
-            });
-        })();
-    </script>
-    </main>
+<input type="text" id="searchInput" placeholder="Search bookmarks..." class="search" autofocus>
+<ul id="bookmarksList"></ul>
+<script type="module">
+ const bookmarksList=document.getElementById('bookmarksList'); const searchInput=document.getElementById('searchInput'); async function fetchBookmarks(){ try{ const response=await fetch('./json/data.json'); const{ bookmarks}=await response.json(); return bookmarks;} catch (error){ console.error('Error fetching bookmarks:', error); return [];}} function displayBookmarks(bookmarksArray){ bookmarksList.innerHTML=''; const sortedBookmarks=bookmarksArray.slice().sort((a, b)=>a.cat.localeCompare(b.cat)); sortedBookmarks.forEach(({ title, url, cat})=>{ const li=document.createElement('li'); li.innerHTML=`<a href="${url}" target="_blank">${title}</a><sup>${cat}</sup>`; bookmarksList.appendChild(li);});} (async ()=>{ const allBookmarks=await fetchBookmarks(); displayBookmarks(allBookmarks); searchInput.addEventListener('input', ()=>{ const searchTerm=searchInput.value.toLowerCase(); const filteredBookmarks=allBookmarks.filter(({ title, url, cat})=>title.toLowerCase().includes(searchTerm) || url.toLowerCase().includes(searchTerm) || cat.toLowerCase().includes(searchTerm) ); displayBookmarks(filteredBookmarks);});})();
+</script>
+</main>
 </body>
 </html>
