@@ -46,6 +46,11 @@
       "title": "Scripts"
     },
     {
+      "cat": "css",
+      "url": "https://concrete.style/",
+      "title": "Concrete css"
+    },
+    {
       "cat": "css,tool",
       "url": "https://uncss-online.com/",
       "title": "UnCSS online"
@@ -186,6 +191,11 @@
       "title": "CSS Icons"
     },
     {
+      "cat": "icon,logo",
+      "url": "https://blendicons.com/",
+      "title": "Blend Icons"
+    },
+    {
       "cat": "icon",
       "url": "https://iconify.design/icon-sets/mdi/",
       "title": "Iconify"
@@ -276,6 +286,11 @@
       "title": "Wormhole"
     },
     {
+      "cat": "md,tool",
+      "url": "https://markdowndown.vercel.app/",
+      "title": "MarkdownDown"
+    },
+    {
       "cat": "tool",
       "url": "https://wareader.nethruster.com/",
       "title": "WA Reader"
@@ -349,6 +364,11 @@
       "cat": "tool",
       "url": "https://toolkit.addy.codes/",
       "title": "Devtools urls"
+    },
+    {
+      "cat": "tool,ai,code",
+      "url": "https://zzzcode.ai/",
+      "title": "zzz Code"
     },
     {
       "cat": "svg,tool",
