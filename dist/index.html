@@ -1,27 +1,272 @@
-<!doctype html>
-<html lang=en>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset=UTF-8 />
-<meta name=viewport content="width=device-width, initial-scale=1" />
-<meta name=theme-color content=#2e393b />
-<meta name=robots content=noindex />
-<title>DevMarks | DEV Bookmarks</title>
-<link rel="icon" href="./favicon.ico" sizes="any">
-<link rel="icon" href="./favicon.svg" type="image/svg+xml">
-<link rel=apple-touch-icon href=./favicon.png>
-<link rel=preload href=./json/data.json as=fetch crossorigin=anonymous>
- <style>*, ::after, ::before{ box-sizing: border-box; text-decoration: none} html{ scroll-behavior: smooth} body{ background-color: #343a40; margin-inline: 0.8rem;} h1{ text-align: center;} .search,li{ background-color: #485759;} .search{ width: 100%; padding: 10px; outline: 0; border: 0; border-radius: 5px;} ul{ list-style-type: none; padding: 0;} li{ padding: 10px; margin: 5px 0; border-radius: 5px;} header,.search,a{ color: #fff; text-decoration: none;} sup{ color: rgb(146, 196, 157);} </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="robots" content="noindex">
+    <title>DevMarks | Dark Bookmarks</title>
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./favicon.png">
+    <link rel="preload" href="./json/data.json" as="fetch" crossorigin="anonymous">
+    <style>
+        :root {
+            --bg-primary: #1a1a1a;
+            --bg-card: #2d2d2d;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-color: #4f46e5;
+            --card-border: #3d3d3d;
+            --hover-bg: #353535;
+            --tag-bg: #4338ca;
+            --transition: all 0.2s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #4f46e5, #818cf8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 2.5rem;
+            font-size: 1rem;
+            border: 1px solid var(--card-border);
+            border-radius: 0.75rem;
+            background: var(--bg-card);
+            color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .bookmarks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .bookmark-card {
+            position: relative;
+            background: var(--bg-card);
+            border: 1px solid var(--card-border);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            transition: var(--transition);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .bookmark-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .bookmark-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent-color), #818cf8);
+            border-radius: 0.75rem 0.75rem 0 0;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .bookmark-card:hover:before {
+            opacity: 1;
+        }
+
+        .bookmark-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .bookmark-url {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            word-break: break-all;
+        }
+
+        .bookmark-category {
+            margin-top: auto;
+            background: var(--tag-bg);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            align-self: flex-start;
+        }
+
+        .external-icon {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        .bookmark-card:hover .external-icon {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .bookmarks-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bookmark-title {
+                font-size: 1.125rem;
+                padding-right: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<header>
-<h1>Devmarks</h1>
-</header>
-<main>
-<input type="text" id="searchInput" placeholder="Search bookmarks..." class="search" autofocus>
-<ul id="bookmarksList"></ul>
-<script type="module">
- const bookmarksList=document.getElementById('bookmarksList'); const searchInput=document.getElementById('searchInput'); async function fetchBookmarks(){ try{ const response=await fetch('./json/data.json'); const{ bookmarks}=await response.json(); return bookmarks;} catch (error){ console.error('Error fetching bookmarks:', error); return [];}} function displayBookmarks(bookmarksArray){ bookmarksList.innerHTML=''; const sortedBookmarks=bookmarksArray.slice().sort((a, b)=>a.cat.localeCompare(b.cat)); sortedBookmarks.forEach(({ title, url, cat})=>{ const li=document.createElement('li'); li.innerHTML=`<a href="${url}" target="_blank">${title}</a><sup>${cat}</sup>`; bookmarksList.appendChild(li);});} (async ()=>{ const allBookmarks=await fetchBookmarks(); displayBookmarks(allBookmarks); searchInput.addEventListener('input', ()=>{ const searchTerm=searchInput.value.toLowerCase(); const filteredBookmarks=allBookmarks.filter(({ title, url, cat})=>title.toLowerCase().includes(searchTerm) || url.toLowerCase().includes(searchTerm) || cat.toLowerCase().includes(searchTerm) ); displayBookmarks(filteredBookmarks);});})();
-</script>
-</main>
+    <div class="container">
+        <header>
+            <h1>DevMarks</h1>
+        </header>
+
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="Search bookmarks..." 
+                aria-label="Search bookmarks"
+                autofocus
+            >
+        </div>
+
+        <div id="bookmarksGrid" class="bookmarks-grid"></div>
+    </div>
+
+    <script>
+        const bookmarksGrid = document.getElementById('bookmarksGrid');
+        const searchInput = document.getElementById('searchInput');
+
+        async function fetchBookmarks() {
+            try {
+                const response = await fetch('./json/data.json');
+                const { bookmarks } = await response.json();
+                return bookmarks;
+            } catch (error) {
+                console.error('Error fetching bookmarks:', error);
+                return [];
+            }
+        }
+
+        function createBookmarkCard(bookmark) {
+            const domain = new URL(bookmark.url).hostname.replace('www.', '');
+            return `
+                <a href="${bookmark.url}" 
+                   class="bookmark-card" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                >
+                    <span class="external-icon">↗</span>
+                    <h2 class="bookmark-title">${bookmark.title}</h2>
+                    <div class="bookmark-url">${domain}</div>
+                    <span class="bookmark-category">${bookmark.cat}</span>
+                </a>
+            `;
+        }
+
+        function displayBookmarks(bookmarks) {
+            bookmarksGrid.innerHTML = bookmarks
+                .map(bookmark => createBookmarkCard(bookmark))
+                .join('');
+        }
+
+        (async () => {
+            const allBookmarks = await fetchBookmarks();
+            displayBookmarks(allBookmarks);
+
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value.toLowerCase();
+                const filteredBookmarks = allBookmarks.filter(({ title, url, cat }) =>
+                    title.toLowerCase().includes(searchTerm) ||
+                    url.toLowerCase().includes(searchTerm) ||
+                    cat.toLowerCase().includes(searchTerm)
+                );
+                displayBookmarks(filteredBookmarks);
+            });
+        })();
+    </script>
 </body>
 </html>
