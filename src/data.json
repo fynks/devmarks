@@ -484,6 +484,11 @@
       "cat": "src",
       "url": "https://pythonawesome.com/tag/scripts/",
       "title": "Awesome Python"
+    },
+    {
+      "cat": "search,tool",
+      "url": "https://pagefind.app/",
+      "title": "Pagefind"
     }
   ]
 }
