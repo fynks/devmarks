@@ -1,504 +1,504 @@
 {
   "bookmarks": [
     {
-      "cat": "API",
+      "cat": "Public APIs, API List",
       "url": "https://github.com/public-apis/public-apis",
       "title": "Public APIs"
     },
     {
-      "cat": "API",
+      "cat": "COVID-19 API, Health API",
       "url": "https://disease.sh/v3/covid-19/countries/pakistan",
       "title": "Disease.sh"
     },
     {
-      "cat": "bdg",
+      "cat": "Markdown Badges, Badges",
       "url": "https://github.com/Ileriayo/markdown-badges",
       "title": "Badges"
     },
     {
-      "cat": "bdg",
+      "cat": "Markdown Badges, Badges",
       "url": "https://github.com/Naereen/badges",
       "title": "MD Bades"
     },
     {
-      "cat": "bdg",
+      "cat": "Badge Generator, Badge Service",
       "url": "https://shields.io/",
       "title": "Shields.io"
     },
     {
-      "cat": "bdg",
+      "cat": "Badge Generator, Badge Service",
       "url": "https://supershields.io/",
       "title": "Super Shields"
     },
     {
-      "cat": "bdg",
+      "cat": "Badge Generator, Badge Tool",
       "url": "https://rozaxe.github.io/factory/",
       "title": "Badges Factory"
     },
     {
-      "cat": "bdg",
+      "cat": "Markdown Badge Tool, Badge Generator",
       "url": "https://mdb.pushkaryadav.in/generate",
       "title": "MKD Badges"
     },
     {
-      "cat": "src,js,php",
+      "cat": "Code Snippets, Scripts Library",
       "url": "https://github.com/fynks/scripts",
       "title": "Scripts"
     },
     {
-      "cat": "css",
+      "cat": "CSS Framework, CSS Library",
       "url": "https://concrete.style/",
       "title": "Concrete css"
     },
     {
-      "cat": "css,tool",
+      "cat": "CSS Tool, CSS Unused Remover",
       "url": "https://uncss-online.com/",
       "title": "UnCSS online"
     },
     {
-      "cat": "css,tool",
+      "cat": "CSS Tool, CSS Formatter",
       "url": "https://www.freeformatter.com/css-beautifier.html",
       "title": "Formatter"
     },
     {
-      "cat": "css,tool",
+      "cat": "CSS Snippets, CSS Layouts",
       "url": "https://smolcss.dev/",
       "title": "Smol Css"
     },
     {
-      "cat": "css,tool",
+      "cat": "CSS Layouts, Layout Snippets",
       "url": "https://1linelayouts.glitch.me/",
       "title": "1 Line Layouts"
     },
     {
-      "cat": "css,tool",
+      "cat": "CSS Layouts, Layout Resources",
       "url": "https://csslayout.io/",
       "title": "CSS Layouts"
     },
     {
-      "cat": "css,tool",
+      "cat": "SVG Tool, Shape Generator",
       "url": "https://squircley.app/",
       "title": "SVG Squircle Maker"
     },
     {
-      "cat": "css,tool",
+      "cat": "Shadow Generator, Color Palette",
       "url": "https://www.joshwcomeau.com/shadow-palette/",
       "title": "Shadow Palette"
     },
     {
-      "cat": "css,tool,shadow",
+      "cat": "Shadow Generator, CSS Tool",
       "url": "https://shadows.brumm.af/",
       "title": "Box Shadow Generator"
     },
     {
-      "cat": "css,tool",
+      "cat": "Border Generator, CSS Tool",
       "url": "https://fancy-borders.mdbgo.io/",
       "title": "Fancy Borders"
     },
     {
-      "cat": "css,tool",
+      "cat": "Color Picker, Color Tool",
       "url": "https://fffuel.co/cccolor/",
       "title": "Color Picker"
     },
     {
-      "cat": "css,tool",
+      "cat": "Separator Generator, CSS Tool",
       "url": "https://wweb.dev/resources/css-separator-generator/",
       "title": "Section Separator Generator"
     },
     {
-      "cat": "css,cli,tool,npm",
+      "cat": "CSS Optimizer, CLI Tool",
       "url": "https://purgecss.com/CLI.html",
       "title": "PurgeCSS"
     },
     {
-      "cat": "css,cli,npm,tool",
+      "cat": "CSS Minifier, CLI Tool",
       "url": "https://github.com/jakubpawlowicz/clean-css-cli#user-content-level-2-optimizations:~:text=cleancss%20%2DO2%20'all%3Aoff%3BremoveDuplicateRules%3Aon'%20one.css",
       "title": "clean-css-cli"
     },
     {
-      "cat": "css,js,src",
+      "cat": "Web Dev Resources, CSS Resources",
       "url": "https://www.cssscript.com/",
       "title": "CSS Script"
     },
     {
-      "cat": "css,animation,tool",
+      "cat": "Animation Generator, CSS Tool",
       "url": "https://webcode.tools/generators/css/keyframe-animation",
       "title": "Animation Generator"
     },
     {
-      "cat": "css,animation,tool",
+      "cat": "Animation Library, Animation Examples",
       "url": "https://animista.net/play/text/tracking-in/tracking-in-expand",
       "title": "Animista"
     },
     {
-      "cat": "encryption,tool",
+      "cat": "Encryption Tool, Security Tool",
       "url": "https://github.com/Greenheart/pagecrypt",
       "title": "Page Crypt"
     },
     {
-      "cat": "encryption",
+      "cat": "Encryption Tool, Static Site Security",
       "url": "https://robinmoisson.github.io/staticrypt/",
       "title": "StatiCrypt"
     },
     {
-      "cat": "img,og,tool",
+      "cat": "OG Image Generator, Social Media",
       "url": "https://tailwind-generator.com/og-image-generator/generator",
       "title": "OG Image Generator"
 
     },
     {
-      "cat": "img,svg,ico",
+      "cat": "SVG Converter, ICO Converter",
       "url": "https://svg2ico.com/",
       "title": "SVG to ICO"
 
     },
     {
-      "cat": "img,ss,tool,",
+      "cat": "Browser Mockup, Screenshot Tool",
       "url": "https://browserframe.com/",
       "title": "Browser Frame"
     },
     {
-      "cat": "img,converter,tool",
+      "cat": "WebP Converter, Image Converter",
       "url": "https://ezgif.com/jpg-to-webp/ezgif-4-49752e7ad3f6.jpg",
       "title": "Img to webp"
     },
     {
-      "cat": "img,tool",
+      "cat": "Background Remover, Image Tool",
       "url": "https://www.remove.bg/",
       "title": "Remove-bg"
     },
     {
-      "cat": "img,tool,optimize",
+      "cat": "Image Optimizer, Image Tool",
       "url": "https://squoosh.app/editor",
       "title": "Squoosh"
     },
     {
-      "cat": "img,tool,optimize",
+      "cat": "Image Optimizer, Image Tool",
       "url": "https://imagecompressor.com/",
       "title": "Optimizilla"
     },
     {
-      "cat": "img,tool,optimize",
+      "cat": "Image Optimizer, Image Tool",
       "url": "https://shrinkme.app/",
       "title": "Shrink Me"
     },
     {
-      "cat": "img,tool,optimize",
+      "cat": "Image Optimizer, Image Tool",
       "url": "https://tinyjpg.com/",
       "title": "TinyJPG"
     },
     {
-      "cat": "img,tool,optimize",
+      "cat": "Image Optimizer, Image Tool",
       "url": "https://www.optimizeimages.com/tool",
       "title": "Optimize Images"
     },
     {
-      "cat": "img,ss,tool",
+      "cat": "Code Snippet Image, Screenshot Tool",
       "url": "https://carbon.now.sh/",
       "title": "Carbon"
     },
     {
-      "cat": "icon",
+      "cat": "Icon Library, CSS Icons",
       "url": "https://css.gg/app",
       "title": "CSS Icons"
     },
     {
-      "cat": "icon,logo",
+      "cat": "Icon Library, Logo Icons",
       "url": "https://blendicons.com/",
       "title": "Blend Icons"
     },
     {
-      "cat": "icon",
+      "cat": "Icon Library, Icon Sets",
       "url": "https://iconify.design/icon-sets/mdi/",
       "title": "Iconify"
     },
     {
-      "cat": "icon",
+      "cat": "Avatar Generator, Profile Picture",
       "url": "https://avatarmaker.com/",
       "title": "Avatar Maker"
     },
     {
-      "cat": "icon",
+      "cat": "Avatar Generator, Profile Picture",
       "url": "https://getavataaars.com/",
       "title": "Avatar Generator"
     },
     {
-      "cat": "icon",
+      "cat": "Icon Library, Health Icons",
       "url": "https://github.com/resolvetosavelives/healthicons",
       "title": "Health Icons"
     },
     {
-      "cat": "icon",
+      "cat": "Icon Tool, Icon Editor",
       "url": "https://icon.kitchen",
       "title": "Icon Kitchen"
     },
     {
-      "cat": "icon,logo",
+      "cat": "Logo Generator, Logo Maker",
       "url": "https://www.ucraft.com/free-logo-maker",
       "title": "Logo Maker"
     },
     {
-      "cat": "json",
+      "cat": "JSON Tool, JSON Formatter",
       "url": "https://jsonformatter.curiousconcept.com/",
       "title": "Formatter"
     },
     {
-      "cat": "pdf,tool",
+      "cat": "PDF Tool, PDF Utilities",
       "url": "https://pdfux.com/",
       "title": "PDF Tools"
     },
     {
-      "cat": "screenshot,tool",
+      "cat": "URL Screenshot, Screenshot Tool",
       "url": "https://instant.tools/url-to-screenshot",
       "title": "url to screenshot"
     },
     {
-      "cat": "list",
+      "cat": "Awesome List, Development Resources",
       "url": "https://github.com/sindresorhus/awesome#front-end-development",
       "title": "Awesome"
     },
     {
-      "cat": "list",
+      "cat": "Web Dev Resources, Resource List",
       "url": "https://web-dev-resources.com/",
       "title": "Web Dev Resources"
     },
     {
-      "cat": "list",
+      "cat": "Awesome List, Design Resources",
       "url": "https://github.com/gztchan/awesome-design",
       "title": "Aw Design"
     },
     {
-      "cat": "list",
+      "cat": "Awesome List, Unconventional Resources",
       "url": "https://github.com/Igglybuff/awesome-piracy",
       "title": "Aw Piracy"
     },
     {
-      "cat": "list",
+      "cat": "Awesome List, List of Lists",
       "url": "https://github.com/jnv/lists",
       "title": "Aw Lists"
     },
     {
-      "cat": "list",
+      "cat": "Design Resources, Resource List",
       "url": "https://github.com/bradtraversy/design-resources-for-developers",
       "title": "Designs"
     },
     {
-      "cat": "list",
+      "cat": "Free Resources, Developer Resources",
       "url": "https://github.com/ripienaar/free-for-dev",
       "title": "Free for Dev"
     },
     {
-      "cat": "list",
+      "cat": "Frontend Resources, Developer Bookmarks",
       "url": "https://github.com/dypsilon/frontend-dev-bookmarks",
       "title": "Frontend Dev"
     },
     {
-      "cat": "upload,share,tool",
+      "cat": "File Sharing, Secure Sharing Tool",
       "url": "https://wormhole.app/",
       "title": "Wormhole"
     },
     {
-      "cat": "md,tool",
+      "cat": "Markdown Tool, Markdown Editor",
       "url": "https://markdowndown.vercel.app/",
       "title": "MarkdownDown"
     },
     {
-      "cat": "tool",
+      "cat": "Web Article Reader, Readability Tool",
       "url": "https://wareader.nethruster.com/",
       "title": "WA Reader"
     },
     {
-      "cat": "tool",
+      "cat": "GitHub Tool, GitHub Stats",
       "url": "https://gitstalk.netlify.app/",
       "title": "GitStalk"
     },
     {
-      "cat": "rss,tool",
+      "cat": "RSS Feed Generator, RSS Tool",
       "url": "https://github.com/RSS-Bridge/rss-bridge",
       "title": "RSS Bridge"
     },
     {
-      "cat": "github,org,tool",
+      "cat": "Organization Name Generator, GitHub Tool",
       "url": "https://github.com/uetchy/namae",
       "title": "Namae"
     },
     {
-      "cat": "svg,icon",
+      "cat": "SVG Icons, Icon Library",
       "url": "https://tabler-icons.io/",
       "title": "Tabler Icons"
     },
     {
-      "cat": "svg,icon",
+      "cat": "Icon Library, Icon Search",
       "url": "https://www.iconfinder.com/",
       "title": "Icon Finder"
     },
     {
-      "cat": "svg,icon",
+      "cat": "Icon Library, Tiny Icons",
       "url": "https://github.com/edent/SuperTinyIcons",
       "title": "Super Tiny Icons"
     },
     {
-      "cat": "svg,icon",
+      "cat": "Icon Tool, Icon Editor",
       "url": "https://icon-blender.com/",
       "title": "Icon Blender"
     },
     {
-      "cat": "html,tool",
+      "cat": "HTML Compressor, HTML Tool",
       "url": "https://htmlcompressor.com/compressor/",
       "title": "Compressor"
     },
     {
-      "cat": "html,tool",
+      "cat": "WordPress Tool, HTML to WordPress Converter",
       "url": "https://htmltowordpress.io/",
       "title": "HTML to WP"
     },
     {
-      "cat": "html,templates",
+      "cat": "Tailwind CSS Templates, HTML Templates",
       "url": "https://tailwindsites.com/",
       "title": "Tailwind Templates"
     },
     {
-      "cat": "svg,icon",
+      "cat": "Icon Library, Free Icons",
       "url": "https://www.flaticon.com/",
       "title": "Free SVGs"
     },
     {
-      "cat": "svg,tool",
+      "cat": "SVG Compressor, SVG Tool",
       "url": "https://vecta.io/nano",
       "title": "Compressor"
     },
     {
-      "cat": "seo,tool",
+      "cat": "SEO Tool, Meta Generator",
       "url": "https://webcode.tools/",
       "title": "Multi Generator"
     },
     {
-      "cat": "tool",
+      "cat": "Devtools Resources, Developer Tool",
       "url": "https://toolkit.addy.codes/",
       "title": "Devtools urls"
     },
     {
-      "cat": "tool,ai,code",
+      "cat": "Code Generation, AI Tool",
       "url": "https://zzzcode.ai/",
       "title": "zzz Code"
     },
     {
-      "cat": "svg,tool",
+      "cat": "SVG Editor, SVG Tool",
       "url": "https://jakearchibald.github.io/svgomg/",
       "title": "SVG Editor"
     },
     {
-      "cat": "svg,icon",
+      "cat": "Wave Generator, SVG Graphics",
       "url": "https://getwaves.io/",
       "title": "Get Waves"
     },
     {
-      "cat": "svg,design,tool",
+      "cat": "SVG Editor, Design Tool",
       "url": "https://boxy-svg.com/app",
       "title": "Boxy SVG"
     },
     {
-      "cat": "userjs,tool",
+      "cat": "UserJS Diff Tool, UserJS Tool",
       "url": "https://icpantsparti.github.io/firefox-user.js-tool/userjs-tool.html",
       "title": "Userjs Compare"
     },
     {
-      "cat": "icon,html,hex",
+      "cat": "HTML Entities, Character Codes",
       "url": "https://graphemica.com/",
       "title": "HTML Entities"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Pattern Generator, SVG Backgrounds",
       "url": "https://pattern.monster/",
       "title": "Pattern Monster"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Background Patterns, SVG Backgrounds",
       "url": "https://www.svgbackgrounds.com/",
       "title": "SVG Backgrounds"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Hero Patterns, SVG Backgrounds",
       "url": "http://www.heropatterns.com/",
       "title": "Hero Patterns"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Text Backgrounds, SVG Backgrounds",
       "url": "https://textbgs.com/",
       "title": "SVG text bg"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Pattern Generator, SVG Backgrounds",
       "url": "https://www.magicpattern.design/tools/css-backgrounds",
       "title": "Magic Patterns"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Pattern Library, SVG Backgrounds",
       "url": "https://www.svgeez.com/",
       "title": "SVGeez"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Pattern Library, SVG Backgrounds",
       "url": "https://philiprogers.com/svgpatterns/",
       "title": "SVG Patterns"
     },
     {
-      "cat": "svg,bg",
+      "cat": "Pattern Library, Vector Backgrounds",
       "url": "https://www.visiwig.com/patterns/",
       "title": "Vector Patterns"
     },
     {
-      "cat": "hex,rem,tool",
+      "cat": "CSS Unit Converter, Unit Converter",
       "url": "https://fynks.github.io/tools/converter/",
       "title": "px to rem"
     },
     {
-      "cat": "tool",
+      "cat": "QR Code Generator, Utility Tool",
       "url": "https://roneetkumar.github.io/code/",
       "title": "QR Generator"
     },
     {
-      "cat": "tool",
+      "cat": "Profile Picture Maker, Image Tool",
       "url": "https://pfpmaker.com/",
       "title": "Profile Pic"
     },
     {
-      "cat": "shortner,tool",
+      "cat": "URL Shortener, Link Shortener",
       "url": "https://github.com/zws-im/zws",
       "title": "Z-W shortner"
     },
     {
-      "cat": "rss,tool",
+      "cat": "RSS Library, RSS Tool",
       "url": "https://github.com/davidesantangelo/dato.rss",
       "title": "dato.rss"
     },
     {
-      "cat": "rss,tool",
+      "cat": "RSS Reader, RSS Tool",
       "url": "https://morss.it/",
       "title": "morss.it"
     },
     {
-      "cat": "maths,tool",
+      "cat": "Calculation Tool, Math Tool",
       "url": "https://wolfreealpha.glitch.me/#Web-App",
       "title": "Wolfree Alpha"
     },
     {
-      "cat": "filters,tool",
+      "cat": "Adblock Filters, Privacy Filters",
       "url": "https://github.com/xarantolus/filtrite",
       "title": "Bromite Filters"
     },
     {
-      "cat": "src,js,tool",
+      "cat": "Print Control, JavaScript Library",
       "url": "https://github.com/sunxvogy/NoPrint.js/",
       "title": "No Print JS"
     },
     {
-      "cat": "src",
+      "cat": "Python Resources, Code Snippets",
       "url": "https://pythonawesome.com/tag/scripts/",
       "title": "Awesome Python"
     },
     {
-      "cat": "search,tool",
+      "cat": "Website Search, Search Tool",
       "url": "https://pagefind.app/",
       "title": "Pagefind"
     }
