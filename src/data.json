@@ -1,16 +1,6 @@
 {
   "bookmarks": [
     {
-      "cat": "Public APIs, API List",
-      "url": "https://github.com/public-apis/public-apis",
-      "title": "Public APIs"
-    },
-    {
-      "cat": "COVID-19 API, Health API",
-      "url": "https://disease.sh/v3/covid-19/countries/pakistan",
-      "title": "Disease.sh"
-    },
-    {
       "cat": "Markdown Badges, Badges",
       "url": "https://github.com/Ileriayo/markdown-badges",
       "title": "Badges"
@@ -61,21 +51,6 @@
       "title": "Formatter"
     },
     {
-      "cat": "CSS Snippets, CSS Layouts",
-      "url": "https://smolcss.dev/",
-      "title": "Smol Css"
-    },
-    {
-      "cat": "CSS Layouts, Layout Snippets",
-      "url": "https://1linelayouts.glitch.me/",
-      "title": "1 Line Layouts"
-    },
-    {
-      "cat": "CSS Layouts, Layout Resources",
-      "url": "https://csslayout.io/",
-      "title": "CSS Layouts"
-    },
-    {
       "cat": "SVG Tool, Shape Generator",
       "url": "https://squircley.app/",
       "title": "SVG Squircle Maker"
@@ -106,29 +81,9 @@
       "title": "Section Separator Generator"
     },
     {
-      "cat": "CSS Optimizer, CLI Tool",
-      "url": "https://purgecss.com/CLI.html",
-      "title": "PurgeCSS"
-    },
-    {
-      "cat": "CSS Minifier, CLI Tool",
-      "url": "https://github.com/jakubpawlowicz/clean-css-cli#user-content-level-2-optimizations:~:text=cleancss%20%2DO2%20'all%3Aoff%3BremoveDuplicateRules%3Aon'%20one.css",
-      "title": "clean-css-cli"
-    },
-    {
-      "cat": "Web Dev Resources, CSS Resources",
-      "url": "https://www.cssscript.com/",
-      "title": "CSS Script"
-    },
-    {
       "cat": "Animation Generator, CSS Tool",
       "url": "https://webcode.tools/generators/css/keyframe-animation",
       "title": "Animation Generator"
-    },
-    {
-      "cat": "Animation Library, Animation Examples",
-      "url": "https://animista.net/play/text/tracking-in/tracking-in-expand",
-      "title": "Animista"
     },
     {
       "cat": "Encryption Tool, Security Tool",
@@ -136,20 +91,9 @@
       "title": "Page Crypt"
     },
     {
-      "cat": "Encryption Tool, Static Site Security",
-      "url": "https://robinmoisson.github.io/staticrypt/",
-      "title": "StatiCrypt"
-    },
-    {
       "cat": "OG Image Generator, Social Media",
       "url": "https://tailwind-generator.com/og-image-generator/generator",
       "title": "OG Image Generator"
-
-    },
-    {
-      "cat": "SVG Converter, ICO Converter",
-      "url": "https://svg2ico.com/",
-      "title": "SVG to ICO"
 
     },
     {
@@ -176,16 +120,6 @@
       "cat": "Image Optimizer, Image Tool",
       "url": "https://imagecompressor.com/",
       "title": "Optimizilla"
-    },
-    {
-      "cat": "Image Optimizer, Image Tool",
-      "url": "https://shrinkme.app/",
-      "title": "Shrink Me"
-    },
-    {
-      "cat": "Image Optimizer, Image Tool",
-      "url": "https://tinyjpg.com/",
-      "title": "TinyJPG"
     },
     {
       "cat": "Image Optimizer, Image Tool",
@@ -348,16 +282,6 @@
       "title": "Compressor"
     },
     {
-      "cat": "WordPress Tool, HTML to WordPress Converter",
-      "url": "https://htmltowordpress.io/",
-      "title": "HTML to WP"
-    },
-    {
-      "cat": "Tailwind CSS Templates, HTML Templates",
-      "url": "https://tailwindsites.com/",
-      "title": "Tailwind Templates"
-    },
-    {
       "cat": "Icon Library, Free Icons",
       "url": "https://www.flaticon.com/",
       "title": "Free SVGs"
@@ -378,11 +302,6 @@
       "title": "Devtools urls"
     },
     {
-      "cat": "Code Generation, AI Tool",
-      "url": "https://zzzcode.ai/",
-      "title": "zzz Code"
-    },
-    {
       "cat": "SVG Editor, SVG Tool",
       "url": "https://jakearchibald.github.io/svgomg/",
       "title": "SVG Editor"
@@ -396,16 +315,6 @@
       "cat": "SVG Editor, Design Tool",
       "url": "https://boxy-svg.com/app",
       "title": "Boxy SVG"
-    },
-    {
-      "cat": "UserJS Diff Tool, UserJS Tool",
-      "url": "https://icpantsparti.github.io/firefox-user.js-tool/userjs-tool.html",
-      "title": "Userjs Compare"
-    },
-    {
-      "cat": "HTML Entities, Character Codes",
-      "url": "https://graphemica.com/",
-      "title": "HTML Entities"
     },
     {
       "cat": "Pattern Generator, SVG Backgrounds",
@@ -448,24 +357,9 @@
       "title": "Vector Patterns"
     },
     {
-      "cat": "CSS Unit Converter, Unit Converter",
-      "url": "https://fynks.github.io/tools/converter/",
-      "title": "px to rem"
-    },
-    {
       "cat": "QR Code Generator, Utility Tool",
       "url": "https://roneetkumar.github.io/code/",
       "title": "QR Generator"
-    },
-    {
-      "cat": "Profile Picture Maker, Image Tool",
-      "url": "https://pfpmaker.com/",
-      "title": "Profile Pic"
-    },
-    {
-      "cat": "URL Shortener, Link Shortener",
-      "url": "https://github.com/zws-im/zws",
-      "title": "Z-W shortner"
     },
     {
       "cat": "RSS Library, RSS Tool",
@@ -476,26 +370,6 @@
       "cat": "RSS Reader, RSS Tool",
       "url": "https://morss.it/",
       "title": "morss.it"
-    },
-    {
-      "cat": "Calculation Tool, Math Tool",
-      "url": "https://wolfreealpha.glitch.me/#Web-App",
-      "title": "Wolfree Alpha"
-    },
-    {
-      "cat": "Adblock Filters, Privacy Filters",
-      "url": "https://github.com/xarantolus/filtrite",
-      "title": "Bromite Filters"
-    },
-    {
-      "cat": "Print Control, JavaScript Library",
-      "url": "https://github.com/sunxvogy/NoPrint.js/",
-      "title": "No Print JS"
-    },
-    {
-      "cat": "Python Resources, Code Snippets",
-      "url": "https://pythonawesome.com/tag/scripts/",
-      "title": "Awesome Python"
     },
     {
       "cat": "Website Search, Search Tool",
