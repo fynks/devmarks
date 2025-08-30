@@ -9,13 +9,12 @@
     "url": ""
   },
   "scripts": {
-    "build": "minifyall --dir ./src/ && rsync -a --delete ./src/ ./dist/json && workbox generateSW workbox-config.js",
+    "build": "workbox generateSW workbox-config.js",
     "publish":"npm publish"
   },
   "author": "Fynks",
   "email": "",
   "dependencies": {
-  "workbox-cli": "^7.3.0",
-  "@josee9988/minifyall": "^1.2.2"
+  "workbox-cli": "^7.3.0"
 }
 }
